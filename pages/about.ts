@@ -1,4 +1,6 @@
-export async function getStaticProps(context) {
+import { GetStaticProps } from "next"
+
+export const getStaticProps: GetStaticProps = async (context) {
   return {
     redirect: {
       destination: '/',
